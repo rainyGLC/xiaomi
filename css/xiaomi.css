@@ -8,8 +8,10 @@
 .banner-background{
 	display: block;
 	height: 120px;
-	background: url(../img/2.jpg);
-	background-size: cover;
+	min-width: 1226px;
+	background: url(../img/2.jpg) center;
+
+
 }
 ul{
 	list-style: none;
@@ -17,44 +19,49 @@ ul{
 ul li a{
 	text-decoration: none;
 }
-.top-nav-container{
+.top-nav{
 	height: 40px;
 	background-color: #333;
 }
-.top-nav-container .top-nav{
-	display: inline-block;
+.top-nav .top-nav-container{
+	display:block;
 	height: 40px;
 	width: 1226px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
-.top-nav .nav-left li {
+.top-nav-container .nav-left li {
 	display: inline-block;
 	float: left;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
 }
-.top-nav .nav-left li a{
+.top-nav-container .nav-left li a{
 	font-size:12px;
 	padding:0 10px;
-	border-right:1px solid #b0b0b0;
+	border-right:1px solid #424242;
 	color: #999;
 }
-.top-nav .nav-right li {
+.top-nav-container .nav-left li:last-of-type a{
+	border:none;
+}
+.top-nav-container .nav-right li {
 	display: inline-block;
 	float: right;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
 }
-.top-nav .nav-right li a{
-    border-right:1px solid #b0b0b0;
+.top-nav-container .nav-right li a{
+    border-right:1px solid #424242;
 	font-size: 12px;
 	padding:0 10px;	
 	color: #999;	
 }
-.top-nav-container .top-nav a:hover{
+.top-nav-container .nav-right li:first-of-type a{
+	border:none;
+}
+.top-nav .top-nav-container a:hover{
 	color:#fff;
 }
 .home-hero-container{
