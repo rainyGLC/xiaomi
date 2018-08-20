@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 .top-bd{
 	width: 100%;
@@ -99,22 +100,19 @@ ul li a{
 	height: 100px;
 }
 .home-hero-nav .logo{
-	display:block;
 	float: left;
 	width: 62px;
 	margin: 24.5px 15px 0 0;
 }
 .logo .xiaomi-logo{
-	display: block;
+	display: inline-block;
 	width: 55px;
 	height: 55px;
-	background:url(../img/mi-logo.png) no-repeat center;
-	background-color:#ff6700; 
+	background:#ff6700 url(../img/mi-logo.png) no-repeat center; 
 }
 .home-hero-nav .hot-ad {
-	display: block;
 	position: absolute;
-  left:84px;
+  left:70px;
   z-index: 21;
   width: 165px;
   height: 100px;
@@ -124,23 +122,17 @@ ul li a{
 	display: block;
 	width: 165px;
 	height: 100px;
-	background: url(../img/5.gif);
-	background-repeat: no-repeat;
-	background-position: center center;
+	background: url(../img/5.gif) no-repeat center;
 }
 .classify-nav{
-	width: 700px;
-	height: 88px;
-	padding: 12px 0 0 65px;
-	margin-left:160px;
-	line-height: 88px;
-
+	width: 870px;
+	height: 100px;
+	line-height: 100px;
+	padding-left: 234px;
 }
 .classify-nav li {
 	display: inline-block;
-	margin-left:15px;
-	font-size: 16px;
-	color: #333;
+	margin-left:20px;
 }
 .classify-nav li a{
 	font-size: 16px;
@@ -150,41 +142,50 @@ ul li a{
 	color: #ff6700;
 }
 .home-hero .search-bar{
-	display: inline-block;
 	float: right;
-	margin-right: 55px;
-	margin-top: -80px;
+	margin-top: 23px;
+	width: 296px;
+	height: 50px;
+	font-size: 0;
+}
+.home-hero .search-bar:hover form{
+	border-color: #ff6700;
+}
+.home-hero .search-bar .search-btn:hover {
+	border-color: #ff6700;
 }
 .search-bar form{
 	position: relative;
-	width: 260px;
+	display: inline-block;
+	vertical-align: top;
+	width: 244px;
+	border:1px solid #ccc;
+	border-right: none;
 }
 .search{
-	box-sizing: border-box;
 	padding: 0 10px;
-	width: 260px;
-	height: 54px;
-	border:1px solid #ccc;
-}
-.search:focus{
+	height: 48px;
+	border: none;
+	width: 243px;
 	outline: none;
-	border:1px solid #ff6700;
 }
 .search-btn{
-	position: absolute;
-	display: block;
-	box-sizing: border-box;
-	margin-left: 259px;
-  margin-top: -54px;
-	width: 55px;
-	height: 54px;
-	text-align: center;
-	line-height: 54px;
+	display: inline-block;
+	vertical-align: top;
+	width: 52px;
+	height: 50px;
 	border:1px solid #ccc;
+	background-image: url(../img/search.svg);
+	background-position: center;
+	background-size: 20px;
+	background-repeat: no-repeat;
 }
 .search-btn:hover{
-	background-color: #ff6700;
 	color: #fff;
+	border-color: #ff6700!important;
+	background-color: #ff6700!important;
+	background-image: url(../img/search-white.svg);
+
 }
 .quick-link{
 	position: absolute;
@@ -206,16 +207,19 @@ ul li a{
 
 
 .home-hero-wrapper{
+	position: relative;
 	width: 1226px;
 	height: 460px;
 	
 }
 .home-hero-wrapper .nav-pills{
+	position: absolute;
+	top: 0;
+	left:0;
 	width: 234px;
-	height: 420px;
+	height: 460px;
 	color: #fff;
-	background: #333;
-	background: rgba(0,0,0,0,6);
+	background: rgba(0,0,0,0.6);
 	padding: 20px 0; 
 }
 .home-hero-wrapper .nav-pills ul li  a{
@@ -225,22 +229,269 @@ ul li a{
 	font-size: 14px;
 	padding: 0 20px 0 26px;
 	color: #fff;
+	background-image: url(../img/navigation.svg);
+	background-position: 190px 12px;
+	background-size: 15px;
+	background-repeat: no-repeat;
 }
 .nav-pills ul li  a:hover{
 	background-color: #f66700;
 }
-
 .wrapper-banner{
-	display: inline-block;
-	vertical-align: top;
 	height: 460px;
- 	width: 992px;
- 	margin-left: 234px;
- 	margin-top: -460px;
 }
 .wrapper-banner img{
-	height: 460px;
 	display: block;
+	height: 460px;
 	max-width: 100%;
 	height: 460px;
 }
+.home-hero-wrapper .arrow-left{
+	position: absolute;
+	top: 50%;
+	width: 42px;
+	height: 69px;
+	margin-top: -35px;
+	margin-left: 234px;
+	background-image: url(../img/navigation-back.svg);
+	background-position: center;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+.home-hero-wrapper .arrow-left:hover{
+	background-color:rgba(0,0,0,0.6);
+	background-image: url(../img/navigation-back-white.svg);
+}
+.home-hero-wrapper .arrow-right{
+	position: absolute;
+  top: 50%;
+  width: 41px;
+  height: 69px;
+  margin-top: -35px;
+  margin-left: 1186px;
+  background-image: url(../img/navigation-right.svg);
+	background-position: center;
+	background-size: 30px;
+	background-repeat: no-repeat;
+}
+.home-hero-wrapper .arrow-right:hover{
+	background-color:rgba(0,0,0,0.6);
+	background-image: url(../img/navigation-right-white.svg);
+}
+.direction{
+	position: absolute;
+	height: 10px;
+	bottom: 20px;
+	right: 30px;
+}
+.direction a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: rgba(0,0,0,0.4);
+	border: 2px solid rgba(255,255,255,0.3);
+	border-radius: 10px;
+	margin-right: 15px;
+}
+.direction a:hover{
+	border: 2px solid #7B7B7B;
+	background: #fcfcfc;
+}
+ .home-hero .home-hero-sub{
+ 	width: 1226px;
+ 	height: 170px;
+ 	margin-top:14px;
+ }
+.home-hero .home-hero-sub .sub-span{
+	width: 234px;
+	height: 170px;
+	display: inline-block;
+	background: #5f5750;
+}
+.home-hero .home-hero-sub .sub-span .sub-span-six{
+	margin:0px;
+	padding:3px;
+	list-style-type: none;
+	font-size: 12px;
+	text-align: center;
+	background: #5f5750;
+}
+.home-hero .home-hero-sub .sub-img{
+	float: right;
+	display: inline-block;
+	height: 170px;
+	margin:0px;
+
+}
+.home-hero .home-hero-sub .sub-img a{
+	margin-left:10px;
+
+}
+.home-hero .home-hero-sub .sub-img a img{
+	width: 316px;
+	height: 170px;
+}
+.home-hero .home-hero-sub .sub-img a:hover{
+	box-shadow:-1px 13px 14px rgba(0,0,0,0.1);
+	transition: all 0.2s;
+}
+.home-hero .home-hero-shopping{
+	width: 1226px;
+	height: 438px;
+	margin-top: 20px;
+}
+.home-hero .home-hero-shopping .hero-shopping-hd{
+	height: 58px;
+	position: relative;
+}
+.home-hero-shopping .hero-shopping-hd .title{
+	margin:0;
+	font-size: 200;
+	line-height: 58px;
+	color:#333;
+}
+.home-hero-shopping .hero-shopping-hd .hero-shopp-more{
+	display: inline-block;
+	width: 72px;
+	height: 24px;
+	border: 1px #b0b0b0 solid;
+	position: absolute;
+	right: 0;
+	top: 24px;
+}
+.home-hero-shopping .hero-box-bd{
+	width: 1226px
+	height:340px;
+
+}
+.hero-box-bd .box-rainbow{
+	display: inline-block;
+	width: 234px;
+	height:340px;
+	background: #f1eded;
+	border-top: 1px solid #e53935;
+	padding-top: 40px;
+  text-align: center;
+}
+.hero-box-bd .box-rainbow .time-title{
+	font-size: 21px;
+ 	color: #ef3a3b;
+	padding-top: 15px;
+}
+.hero-box-bd .box-rainbow img{
+	margin: 25px auto;
+}
+.hero-box-bd .box-rainbow .sub{
+	color: rgba(0,0,0,0.54);
+  font-size: 15px;
+}
+.hero-box-bd .box-rainbow .sub-time{
+	display: inline-block;
+	width: 230px;
+	height: 46px;
+  margin: 28px auto 0;
+}
+.box-rainbow .sub-time .box .dosh{
+	display:inline-block;	
+}
+.box-rainbow .sub-time .box{
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 46px;
+  background: #605751;
+ 	color: #fff;
+  font-size: 24px;
+  line-height: 46px;
+}
+.box-rainbow .sub-time .dosh{
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+  height: 46px;
+  line-height: 46px;
+  color: #605751;
+  font-size: 28px;
+}
+.hero-box-bd .xm-container{
+	float: right;
+	width: 992px;
+	height: 340px;
+}
+.hero-box-bd .xm-container .xm-goods{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 234px;
+	height: 339px;
+	margin-right:10px;
+}
+.xm-container .xm-goods .bg{
+	display: inline-block;
+	width: 234px;
+  height: 340px;
+  background-color: rgba(0,0,0,0.02);  
+  text-align: center;
+}
+.xm-container .xm-goods .bg img{
+	width: 160px;
+	height: 165px;
+	margin: 0 auto 22px;
+}
+.xm-container .xm-goods .bg h3{
+	color: #212121;
+  margin-top: 25px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.xm-container .xm-goods .bg .desc{
+	height: 18px;
+  margin: 0 20px 12px;
+  font-size: 12px;
+  color: #b0b0b0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.xm-container .xm-goods .bg .price{
+	margin: 0;
+  color: #ff6709;
+
+}
+.xm-container .xm-goods .bg .price span{
+	text-decoration: line-through;
+	color: #b0b0b0;
+	margin-left: 8px;
+}
+.xm-goods .saleoff{
+	position: absolute;
+	background-color: #e53935;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  width: 64px;
+  height: 20px;
+  margin-left: -32px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+.home-hero-shopping .hero-banner{
+	height: 120px;
+	margin: 2px 0 42px;
+	margin-top: 45px;
+}
+.home-hero-shopping .hero-banner img{
+	width: 1226px;
+	height:120px;
+}
+   
+.page-main{
+	width: 1226px;
+	background: #f5f5f5;
+}
+
+    
