@@ -148,18 +148,18 @@ ul li a{
 	height: 50px;
 	font-size: 0;
 }
-.home-hero .search-bar:hover form{
-	border-color: #ff6700;
+.home-hero .search-bar:hover form {
+	border-color: #b0b0b0;
 }
 .home-hero .search-bar .search-btn:hover {
-	border-color: #ff6700;
+	border-color: #b0b0b0;
 }
 .search-bar form{
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 244px;
-	border:1px solid #ccc;
+	border:1px solid #e0e0e0;
 	border-right: none;
 }
 .search{
@@ -167,6 +167,7 @@ ul li a{
 	height: 48px;
 	border: none;
 	width: 243px;
+	font-size: 14px;
 	outline: none;
 }
 .search-btn{
@@ -174,7 +175,7 @@ ul li a{
 	vertical-align: top;
 	width: 52px;
 	height: 50px;
-	border:1px solid #ccc;
+	border:1px solid #e0e0e0;
 	background-image: url(../img/search.svg);
 	background-position: center;
 	background-size: 20px;
@@ -223,29 +224,47 @@ ul li a{
 	padding: 20px 0; 
 }
 .home-hero-wrapper .nav-pills ul li  a{
+	position: relative;
 	display: block;
 	height: 42px;
 	line-height: 42px;
 	font-size: 14px;
 	padding: 0 20px 0 26px;
 	color: #fff;
-	background-image: url(../img/navigation.svg);
+	/*background-image: url(../img/navigation.svg);*/
 	background-position: 190px 12px;
 	background-size: 15px;
 	background-repeat: no-repeat;
 }
+.home-hero-wrapper .nav-pills ul li  a:after{
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 8px;
+	height:8px;
+	border-top:2px solid #b0b0b0;
+	border-right:2px solid #b0b0b0;
+	transform: rotate(45deg);
+	right: 25px;
+  bottom: 18px;
+}
 .nav-pills ul li  a:hover{
 	background-color: #f66700;
 }
-.wrapper-banner{
+.wrapper-big-banner{
+	height: 460px;
+	position: relative;
+}
+.wrapper-big-banner .wrapper-banner{
 	height: 460px;
 }
-.wrapper-banner img{
+.wrapper-big-banner .wrapper-banner img{
 	display: block;
 	height: 460px;
 	max-width: 100%;
 	height: 460px;
 }
+
 .home-hero-wrapper .arrow-left{
 	position: absolute;
 	top: 50%;
@@ -283,6 +302,7 @@ ul li a{
 	height: 10px;
 	bottom: 20px;
 	right: 30px;
+	font-size: 0;
 }
 .direction a{
 	display: inline-block;
@@ -291,7 +311,7 @@ ul li a{
 	background: rgba(0,0,0,0.4);
 	border: 2px solid rgba(255,255,255,0.3);
 	border-radius: 10px;
-	margin-right: 15px;
+	margin:0 5px;
 }
 .direction a:hover{
 	border: 2px solid #7B7B7B;
