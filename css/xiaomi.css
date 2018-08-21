@@ -389,14 +389,16 @@ ul li a{
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  color: rgba(255,255,255,0.7);
+  color:rgba(255,255,255,0.7);
 }
 .home-hero-sub .sub-span .sub-span-six a:hover{
-	color: #665e57;
+	color: #ffffff;
 }
 
 .home-hero .home-hero-sub .sub-img a{
 	margin-left:10px;
+	display: inline-block;
+	height: 170px;
 }
 .home-hero .home-hero-sub .sub-img{
 	float: right;
@@ -924,6 +926,7 @@ ul li a{
 }
 .household-item-small a{
 	display: inline-block;
+	margin: 0 110px 0 30px;
 	font-size: 18px;
 	color: #333;
 	text-decoration: none;
